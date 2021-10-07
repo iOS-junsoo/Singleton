@@ -11,7 +11,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //Singleton Class 접근하는 방법
+        let userInfo = UserInfo.shared
+        userInfo.id = "iOSoo"
+        userInfo.password = "1234"
+        userInfo.name = "김준수"
     }
 
 
